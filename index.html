@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>LifeBot LifeToken Simulation</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <main>
+    <h1>LifeBot LifeToken Simulation</h1>
+
+    <section id="panel">
+      <p><b>Tick:</b> <span id="tick">0</span></p>
+      <p><b>Mode:</b> <span id="mode">Extended Life Simulation</span></p>
+      <p><b>Affect:</b> <span id="affect">balanced / protected</span></p>
+      <p><b>Memory Count:</b> <span id="memory">0</span></p>
+      <p><b>Identity Coherence:</b> <span id="coherence">1.000</span></p>
+      <p><b>Prediction Error:</b> <span id="error">0.000</span></p>
+      <p><b>LifeToken Power:</b> <span id="power">0</span></p>
+      <p><b>Current Action:</b> <span id="action">initializing life token field</span></p>
+    </section>
+
+    <button onclick="startSimulation()">Start</button>
+    <button onclick="stepSimulation()">Step Once</button>
+    <button onclick="resetSimulation()">Reset</button>
+
+    <h2>Memory Log</h2>
+    <pre id="log"></pre>
+  </main>
+
+  <script src="src/lifetoken.js"></script>
+  <script src="src/simulation.js"></script>
+</body>
+</html>
