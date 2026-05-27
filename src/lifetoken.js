@@ -46,3 +46,31 @@ const LifeToken = {
     };
   }
 };
+
+// Universe Reaction Engine
+const UniverseReaction = {
+  calculate(tokens, lifeTokenPower, predictionError) {
+    const harmony =
+      (tokens.love + tokens.wisdom + tokens.clarity + tokens.health) / 4;
+
+    const gravity =
+      Math.sqrt(lifeTokenPower) + tokens.legacy;
+
+    const expansion =
+      harmony * 2 - predictionError * 100;
+
+    const reaction =
+      expansion > 250
+        ? "the universe responds with expansion, light, and coherence"
+        : "the universe is listening and stabilizing";
+
+    return {
+      harmony: harmony.toFixed(2),
+      gravity: gravity.toFixed(2),
+      expansion: expansion.toFixed(2),
+      reaction
+    };
+  }
+};
+
+window.UniverseReaction = UniverseReaction;
