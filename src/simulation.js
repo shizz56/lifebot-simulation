@@ -111,3 +111,12 @@ function resetSimulation() {
 }
 
 stepSimulation();
+const universe = UniverseReaction.calculate(
+  tokens,
+  coin.lifeTokenPower,
+  predictionError
+);log.textContent += "\nUniverse Reaction:\n";
+log.textContent += "- Harmony: " + universe.harmony + "\n";
+log.textContent += "- Gravity: " + universe.gravity + "\n";
+log.textContent += "- Expansion: " + universe.expansion + "\n";
+log.textContent += "- Response: " + universe.reaction + "\n\n";
